@@ -27,6 +27,6 @@ PLURAL_EXCEPTIONS  = DeviceClassParameters:DeviceClassParameters
 PLURAL_EXCEPTIONS += GpuClaimParameters:GpuClaimParameters
 
 ifeq ($(IMAGE_NAME),)
-REGISTRY ?= registry.example.com
+REGISTRY ?= back1ash
 IMAGE_NAME = $(REGISTRY)/$(DRIVER_NAME)
 endif
