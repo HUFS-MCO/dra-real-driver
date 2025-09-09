@@ -17,8 +17,8 @@ type ClaimParameters struct {
 	metav1.TypeMeta   `json:",inline"`
 	metav1.ObjectMeta `json:"metadata,omitempty"`
 
-	Runtime *int64 `json:"runtime,omitempty"`
-	Period *int64 `json:"period,omitempty"`
+	Runtime *uint64 `json:"runtime,omitempty"`
+	Period *uint64 `json:"period,omitempty"`
 	// +optional
-	CPU *int `json:"cpu,omitempty"`
+	CPU *uint `json:"cpu,omitempty"`
 }

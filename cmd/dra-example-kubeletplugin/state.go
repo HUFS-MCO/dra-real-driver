@@ -33,6 +33,10 @@ import (
 	cdispec "tags.cncf.io/container-device-interface/specs-go"
 )
 
+const (
+	DriverPluginCheckpointFile = "checkpoint.json"
+)
+
 type AllocatableDevices map[string]resourceapi.Device
 type PreparedDevices []*PreparedDevice
 type PreparedClaims map[string]PreparedDevices

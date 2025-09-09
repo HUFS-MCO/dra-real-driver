@@ -31,17 +31,17 @@ func (in *ClaimParameters) DeepCopyInto(out *ClaimParameters) {
 	in.ObjectMeta.DeepCopyInto(&out.ObjectMeta)
 	if in.Runtime != nil {
 		in, out := &in.Runtime, &out.Runtime
-		*out = new(int64)
+		*out = new(uint64)
 		**out = **in
 	}
 	if in.Period != nil {
 		in, out := &in.Period, &out.Period
-		*out = new(int64)
+		*out = new(uint64)
 		**out = **in
 	}
 	if in.CPU != nil {
 		in, out := &in.CPU, &out.CPU
-		*out = new(int)
+		*out = new(uint)
 		**out = **in
 	}
 }
